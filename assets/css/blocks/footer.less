@@ -1,0 +1,40 @@
+//main: ../style.less
+
+.footer{
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+
+.footer__inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__left{
+    width: 50%;
+    @media @notebook{
+        width: 45%;
+    }
+    @media @mobile{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.footer__right{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @media @mobile{
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: 100%;
+
+        img{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

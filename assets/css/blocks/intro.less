@@ -1,0 +1,23 @@
+//main: ../style.less
+.intro{
+    margin-top: 100px;
+    background: url(../img/intro-image.png) no-repeat;
+    background-position: right;
+    background-size: contain;
+    @media @mobile{
+        background:none;
+    }
+}
+
+.intro__content{
+    width: 50%;
+
+    @media @mobile{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.about__text p,img{
+    margin: 15px 0;
+}

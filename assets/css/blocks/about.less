@@ -1,0 +1,31 @@
+//main: ../style.less
+
+.about{
+    margin-top: 150px;
+}
+
+.about__inner{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+.about__inner p{
+    margin: auto;
+    width: 60%;
+    @media @mobile{
+        width: 100%;
+    }
+}
+
+.about__content{
+    flex-wrap: wrap;
+    display: flex;
+    column-gap: 30px;
+}
+
+.about__img{
+    @media @mobile{
+        display:none;
+    }
+}
